@@ -7,8 +7,8 @@
     <author email="webplug@gmail.com" href="http://www.dungzi.com/">
         Dungzi Team
     </author>
-	<preference name="AutoHideSplashScreen" value="false" />
-	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="SplashScreenDelay" value="5000" />
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="android-minSdkVersion" value="15" />
 	<preference name="fullscreen" value="true" />
