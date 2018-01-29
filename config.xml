@@ -7,7 +7,7 @@
     <author email="webplug@gmail.com" href="http://www.dungzi.com/">
         Dungzi Team
     </author>
-	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="AutoHideSplashScreen" value="false" />
 	<preference name="SplashScreenDelay" value="10000" />
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="android-minSdkVersion" value="15" />
@@ -15,12 +15,18 @@
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
-	<gap:plugin name="cordova-plugin-splashscreen" version="3.1.0" source="npm" />
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 
-	
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
 	<splash src="splash.png" />
+	<platform name="android">  
+		<splash src="splash.png" qualifier="ldpi"/>  
+		<splash src="splash.png" qualifier="mdpi"/>  
+		<splash src="splash.png" qualifier="hdpi"/>  
+		<splash src="splash.png" qualifier="xhdpi"/>  
+		<splash src="splash.png" qualifier="xxhdpi"/>  
+	</platform> 
 	<content src="index.html" />
 	<access origin="*" />
 </widget>
